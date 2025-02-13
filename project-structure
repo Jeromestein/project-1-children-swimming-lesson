@@ -1,0 +1,17 @@
+splashes/
+├── index.html
+├── pages/
+│   ├── programs.html
+│   ├── gallery.html
+│   ├── schedule.html
+│   └── contact.html
+├── css/
+│   └── style.css
+├── js/
+│   ├── main.js
+│   └── vue-components.js
+└── assets/
+    └── images/
+       ├── programs/
+       ├── gallery/
+       └── hero/ 
