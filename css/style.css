@@ -1,0 +1,151 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Hero Section */
+.hero-banner {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/images/hero-bg.jpg');
+}
+
+/* Custom Components */
+.card-hover:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-banner {
+        height: 300px;
+    }
+}
+
+/* Header Styles */
+.navbar {
+    padding: 1rem 2rem;
+    background: linear-gradient(to right, #1e3c72, #2a5298) !important;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff !important;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.nav-item.active .nav-link {
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(to right, #1e3c72, #2a5298) !important;
+    padding: 2rem 0 !important;
+    margin-top: 4rem !important;
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
+/* Add contact info to footer */
+.footer-contact {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1rem;
+}
+
+.footer-social a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+/* Navigation */
+nav.navbar.navbar-expand-lg.navbar-dark {
+    padding: 1rem 2rem;
+    background: linear-gradient(to right, #1e3c72, #2a5298) !important;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff !important;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.nav-item.active .nav-link {
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+/* Footer */
+footer.text-white {
+    background: linear-gradient(to right, #1e3c72, #2a5298) !important;
+    padding: 2rem 0 !important;
+    margin-top: 4rem !important;
+}
+
+footer.text-white p {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
+/* Add contact info to footer */
+.footer-contact {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1rem;
+}
+
+.footer-social {
+    margin-top: 1rem;
+}
+
+.footer-social a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+.footer-social a i {
+    transition: transform 0.3s ease;
+}
+
+.footer-social a:hover i {
+    transform: scale(1.2);
+} 
