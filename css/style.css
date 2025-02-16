@@ -20,7 +20,29 @@ body {
 .card-hover:hover {
     transform: translateY(-5px);
     transition: transform 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px 
+    rgba(0,0,0,0.1);
+}
+
+/* Make the table full width */
+.table {
+    width: 100%; /* Full width */
+    table-layout: auto; /* Allow column sizes to adjust dynamically */
+}
+.table th, .table td {
+    white-space: nowrap; /* Prevents text wrapping */
+    overflow: hidden; /* Prevents content from overflowing */
+    text-overflow: ellipsis; /* Adds "..." for overflowing text */
+}
+.table th, .table td {
+    padding: 12px 10px; /* More padding for better spacing */
+    font-size: 14px; /* Keep text readable */
+}
+
+
+/* Prevents any unexpected scrolling */
+.container {
+    overflow-x: hidden; /* Hide horizontal scrolling */
 }
 
 /* Responsive Adjustments */
