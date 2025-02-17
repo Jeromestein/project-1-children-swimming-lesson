@@ -90,6 +90,19 @@ body {
   }
 }
 
+/* gallery carousel */
+/* Ensure all images have the same height */
+.fixed-img {
+  height: 500px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures images fill the area while keeping aspect ratio */
+}
+
+/* Center the carousel and add margin */
+#galleryCarousel {
+  max-width: 900px; /* Adjust width as needed */
+  margin: 20px auto; /* Adds top margin and centers horizontally */
+}
+
 /* Header Styles */
 .navbar {
   padding: 1rem 2rem;
