@@ -3,6 +3,12 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+h1:not(.hero-banner h1) {
+    font-weight: bold;
+    color: #2a5298;
+}
+
+
 /* Hero Section */
 .hero-banner {
     height: 600px;
