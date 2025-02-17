@@ -5,13 +5,14 @@ Vue.component('hero-banner', {
             <div class="container">
                 <h1>{{ title }}</h1>
                 <p>{{ subtitle }}</p>
+                <a href="pages/contact.html" class="cta-button">Join Us Today!</a>
             </div>
         </div>
     `,
     data() {
         return {
-            title: 'Explore the World',
-            subtitle: 'Your journey begins here'
+            title: 'Dive Into Confidence',
+            subtitle: 'Join our swimming programs and build lifelong skills'
         }
     }
 });
@@ -19,4 +20,4 @@ Vue.component('hero-banner', {
 // Initialize Vue
 new Vue({
     el: '#app'
-}); 
+});
