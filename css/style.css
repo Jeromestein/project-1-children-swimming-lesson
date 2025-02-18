@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 h1:not(.hero-banner h1) {
@@ -11,210 +11,220 @@ h1:not(.hero-banner h1) {
 
 /* Hero Section */
 .hero-banner {
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                      url('/Users/shinga/Desktop/WESTCLIFF/project-1-children-swimming-lesson/css/Swim school.jpg'); 
-    padding: 20px;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("swim_school.jpg");
+  padding: 20px;
 }
-
 
 /* Title */
 .hero-banner h1 {
-    font-size: 4rem;  /* Increased from default */
-    font-weight: bold;
+  font-size: 4rem; /* Increased from default */
+  font-weight: bold;
 }
 
 /* Subtitle */
 .hero-banner p {
-    font-size: 1.5rem; /* Slightly larger for better readability */
-    font-weight: 400;
-    max-width: 600px;
-    text-align: center; /* Ensures text is centered */
-    margin: 0 auto 20px auto; /* Adds space below the subtitle */ 
+  font-size: 1.5rem; /* Slightly larger for better readability */
+  font-weight: 400;
+  max-width: 600px;
+  text-align: center; /* Ensures text is centered */
+  margin: 0 auto 20px auto; /* Adds space below the subtitle */
 }
 
 /* CTA Button */
 .hero-banner .cta-button {
-    font-size: 1rem;
-    padding: 12px 24px;
-    background-color: #4D6A9C; /* Blue color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    margin-top: 20px; /* Adds spacing from subtitle */
-    display: inline-block;
+  font-size: 1rem;
+  padding: 12px 24px;
+  background-color: #4d6a9c; /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px; /* Adds spacing from subtitle */
+  display: inline-block;
 }
 
 .cta-button:hover {
-    background-color: #2a5298;
-    color: white;
+  background-color: #2a5298;
+  color: white;
 }
-
 
 /* Custom Components */
 .card-hover:hover {
-    transform: translateY(-5px);
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 15px 
-    rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Make the table full width */
 .table {
-    width: 100%; /* Full width */
-    table-layout: auto; /* Allow column sizes to adjust dynamically */
+  width: 100%; /* Full width */
+  table-layout: auto; /* Allow column sizes to adjust dynamically */
 }
-.table th, .table td {
-    white-space: nowrap; /* Prevents text wrapping */
-    overflow: hidden; /* Prevents content from overflowing */
-    text-overflow: ellipsis; /* Adds "..." for overflowing text */
+.table th,
+.table td {
+  white-space: nowrap; /* Prevents text wrapping */
+  overflow: hidden; /* Prevents content from overflowing */
+  text-overflow: ellipsis; /* Adds "..." for overflowing text */
 }
-.table th, .table td {
-    padding: 12px 10px; /* More padding for better spacing */
-    font-size: 14px; /* Keep text readable */
+.table th,
+.table td {
+  padding: 12px 10px; /* More padding for better spacing */
+  font-size: 14px; /* Keep text readable */
 }
-
 
 /* Prevents any unexpected scrolling */
 .container {
-    overflow-x: hidden; /* Hide horizontal scrolling */
+  overflow-x: hidden; /* Hide horizontal scrolling */
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .hero-banner {
-        height: 600px;
-    }
+  .hero-banner {
+    height: 600px;
+  }
+}
+
+/* gallery carousel */
+/* Ensure all images have the same height */
+.fixed-img {
+  height: 500px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures images fill the area while keeping aspect ratio */
+}
+
+/* Center the carousel and add margin */
+#galleryCarousel {
+  max-width: 900px; /* Adjust width as needed */
+  margin: 20px auto; /* Adds top margin and centers horizontally */
 }
 
 /* Header Styles */
 .navbar {
-    padding: 1rem 2rem;
-    background: linear-gradient(to right, #1e3c72, #2a5298) !important;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #1e3c72, #2a5298) !important;
 }
 
 .navbar-brand {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #fff !important;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff !important;
 }
 
 .nav-link {
-    font-size: 1.1rem;
-    padding: 0.5rem 1rem !important;
-    color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem !important;
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .nav-link:hover {
-    color: #fff !important;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
 }
 
 .nav-item.active .nav-link {
-    color: #fff !important;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
 }
 
 /* Footer Styles */
 footer {
-    background: linear-gradient(to right, #1e3c72, #2a5298) !important;
-    padding: 2rem 0 !important;
-    margin-top: 4rem !important;
+  background: linear-gradient(to right, #1e3c72, #2a5298) !important;
+  padding: 2rem 0 !important;
+  margin-top: 4rem !important;
 }
 
 footer p {
-    margin-bottom: 0;
-    font-size: 1.1rem;
+  margin-bottom: 0;
+  font-size: 1.1rem;
 }
 
 /* Add contact info to footer */
 .footer-contact {
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1rem;
 }
 
 .footer-social a {
-    color: white;
-    margin: 0 10px;
-    font-size: 1.2rem;
+  color: white;
+  margin: 0 10px;
+  font-size: 1.2rem;
 }
 
 /* Navigation */
 nav.navbar.navbar-expand-lg.navbar-dark {
-    padding: 1rem 2rem;
-    background: linear-gradient(to right, #1e3c72, #2a5298) !important;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #1e3c72, #2a5298) !important;
 }
 
 .navbar-brand {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #fff !important;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff !important;
 }
 
 .nav-link {
-    font-size: 1.1rem;
-    padding: 0.5rem 1rem !important;
-    color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem !important;
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .nav-link:hover {
-    color: #fff !important;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
 }
 
 .nav-item.active .nav-link {
-    color: #fff !important;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
 }
 
 /* Footer */
 footer.text-white {
-    background: linear-gradient(to right, #1e3c72, #2a5298) !important;
-    padding: 2rem 0 !important;
-    margin-top: 4rem !important;
+  background: linear-gradient(to right, #1e3c72, #2a5298) !important;
+  padding: 2rem 0 !important;
+  margin-top: 4rem !important;
 }
 
 footer.text-white p {
-    margin-bottom: 0;
-    font-size: 1.1rem;
+  margin-bottom: 0;
+  font-size: 1.1rem;
 }
 
 /* Add contact info to footer */
 .footer-contact {
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1rem;
 }
 
 .footer-social {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .footer-social a {
-    color: white;
-    margin: 0 10px;
-    font-size: 1.2rem;
+  color: white;
+  margin: 0 10px;
+  font-size: 1.2rem;
 }
 
 .footer-social a i {
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .footer-social a:hover i {
-    transform: scale(1.2);
-} 
-
+  transform: scale(1.2);
+}
