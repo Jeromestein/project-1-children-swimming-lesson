@@ -16,6 +16,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
+    <!-- Add Vue.js before your component file -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
   </head>
   <body>
     <!-- Navigation -->
@@ -53,6 +55,18 @@
     <!-- Hero Section with Vue Component -->
     <div id="app">
       <hero-banner></hero-banner>
+      <!-- Add debug component -->
+      <div class="container mt-4">
+        <debug-info></debug-info>
+      </div>
+      <!-- Weather widget container -->
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-4">
+            <weather></weather>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Main Content -->
@@ -202,6 +216,7 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Move Vue.js from head to here -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
     <script src="js/vue-components.js"></script>
     <script src="js/main.js"></script>

@@ -228,3 +228,72 @@ footer.text-white p {
 .footer-social a:hover i {
   transform: scale(1.2);
 }
+
+/* Weather Widget Styles - Updated */
+.weather-widget {
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.weather-widget .card {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.weather-widget .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.weather-widget .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 0.5rem;
+}
+
+.weather-widget .weather-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.weather-widget .temperature {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.weather-widget .temperature i {
+    font-size: 2rem;
+    color: #ffd700;
+}
+
+.weather-widget .condition {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+.weather-widget .condition img {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+}
+
+.weather-widget .humidity {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.weather-widget .humidity i {
+    color: #87ceeb;
+}
