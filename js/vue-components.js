@@ -105,15 +105,20 @@ Vue.component('weather', {
             const city = 'Los Angeles';
             
             this.loading = true;
-            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`)
-                .then(response => {
-                    if (!response.ok) {
-                        console.error('Weather API Response:', response.status, response.statusText);
-                        throw new Error('Weather data not available');
-                    }
-                    return response.json();
-                })
-                .then(data => {
+            $.ajax({
+                url: 'https://api.openweathermap.org/data/2.5/weather',
+                method: 'GET',
+                data: {
+                    q: city,
+                    units: 'metric',
+                    appid: API_KEY
+                },
+                timeout: 5000, // 5 seconds timeout
+                cache: false,  // Disable caching
+                beforeSend: () => {
+                    this.loading = true;
+                },
+                success: (data) => {
                     console.log('Weather data received:', data);
                     this.weather = {
                         temp: Math.round(data.main.temp),
@@ -124,12 +129,16 @@ Vue.component('weather', {
                     this.loading = false;
                     this.error = null;
                     this.lastUpdateTime = new Date().toLocaleTimeString();
-                })
-                .catch(err => {
+                },
+                error: (jqXHR, textStatus, errorThrown) => {
                     this.error = 'Weather data loading failed. Please try again later.';
                     this.loading = false;
-                    console.error('Weather API Error:', err.message);
-                });
+                    console.error('Weather API Error:', textStatus, errorThrown);
+                },
+                complete: () => {
+                    console.log('Weather API request completed');
+                }
+            });
         }
     }
 });
