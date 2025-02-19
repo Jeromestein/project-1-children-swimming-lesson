@@ -21,7 +21,7 @@ Vue.component('hero-banner', {
 Vue.component('debug-info', {
     template: `
         <div class="alert alert-info">
-            Vue is working! Current time: {{ currentTime }}
+            Current time: {{ currentTime }}
         </div>
     `,
     data() {
@@ -39,7 +39,7 @@ Vue.component('debug-info', {
 // Weather Component
 Vue.component('weather', {
     template: `
-        <div class="weather">
+        <div class="weather-widget">
             <div v-if="loading" class="text-center p-4">
                 <div class="spinner-border text-primary" role="status">
                     <span class="sr-only">Loading...</span>
@@ -49,12 +49,31 @@ Vue.component('weather', {
                 {{ error }}
             </div>
             <div v-else class="card">
-                <div class="container">
-                    <h2>Weather in {{ city }}</h2>
-                    <p>Temperature: {{ weather.temp }}°C</p>
-                    <p>Humidity: {{ weather.humidity }}%</p>
-                    <p>Description: {{ weather.description }}</p>
-                    <img :src="'http://openweathermap.org/img/wn/' + weather.icon + '@2x.png'" alt="Weather Icon">
+                <div class="card-body">
+                    <div class="weather-header">
+                        <i class="fas fa-map-marker-alt location-icon"></i>
+                        <h2>{{ city }}</h2>
+                    </div>
+                    <div class="weather-content">
+                        <div class="temperature-section">
+                            <span class="temperature">{{ weather.temp }}°</span>
+                            <img :src="'http://openweathermap.org/img/wn/' + weather.icon + '@2x.png'" 
+                                 :alt="weather.description" 
+                                 class="weather-icon">
+                        </div>
+                        <div class="weather-details">
+                            <div class="weather-description">
+                                {{ weather.description }}
+                            </div>
+                            <div class="humidity-section">
+                                <i class="fas fa-tint"></i>
+                                <span>{{ weather.humidity }}% Humidity</span>
+                            </div>
+                            <div class="update-time">
+                                Last updated: {{ lastUpdateTime }}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -69,7 +88,8 @@ Vue.component('weather', {
                 icon: ''
             },
             loading: false,
-            error: null
+            error: null,
+            lastUpdateTime: ''
         }
     },
     mounted() {
@@ -94,7 +114,7 @@ Vue.component('weather', {
                     return response.json();
                 })
                 .then(data => {
-                    console.log('Weather data received:', data); // Debug log
+                    console.log('Weather data received:', data);
                     this.weather = {
                         temp: Math.round(data.main.temp),
                         humidity: data.main.humidity,
@@ -103,6 +123,7 @@ Vue.component('weather', {
                     };
                     this.loading = false;
                     this.error = null;
+                    this.lastUpdateTime = new Date().toLocaleTimeString();
                 })
                 .catch(err => {
                     this.error = 'Weather data loading failed. Please try again later.';

@@ -229,7 +229,7 @@ footer.text-white p {
   transform: scale(1.2);
 }
 
-/* Weather Widget Styles - Updated */
+/* Weather Widget Styles */
 .weather-widget {
     margin-bottom: 2rem;
     transition: all 0.3s ease;
@@ -241,6 +241,7 @@ footer.text-white p {
     border: none;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .weather-widget .card:hover {
@@ -248,52 +249,82 @@ footer.text-white p {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-.weather-widget .card-title {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    padding-bottom: 0.5rem;
-}
-
-.weather-widget .weather-info {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-
-.weather-widget .temperature {
-    font-size: 2.5rem;
-    font-weight: bold;
+.weather-widget .weather-header {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
-.weather-widget .temperature i {
-    font-size: 2rem;
+.weather-widget .location-icon {
     color: #ffd700;
 }
 
-.weather-widget .condition {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.2rem;
+.weather-widget h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-.weather-widget .condition img {
-    width: 50px;
-    height: 50px;
+.weather-widget .weather-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.weather-widget .temperature-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather-widget .temperature {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.weather-widget .weather-icon {
+    width: 80px;
+    height: 80px;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
 }
 
-.weather-widget .humidity {
+.weather-widget .weather-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.weather-widget .weather-description {
     font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.weather-widget .humidity-section {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    font-size: 1.1rem;
 }
 
-.weather-widget .humidity i {
+.weather-widget .humidity-section i {
     color: #87ceeb;
+}
+
+.weather-widget .update-time {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .weather-widget .temperature {
+        font-size: 2.5rem;
+    }
+    
+    .weather-widget .weather-icon {
+        width: 60px;
+        height: 60px;
+    }
 }
