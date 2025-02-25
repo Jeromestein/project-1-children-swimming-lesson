@@ -328,3 +328,89 @@ footer.text-white p {
         height: 60px;
     }
 }
+
+
+/* About Splashes - 3 columns in the landing */
+.feature-section .row {
+  background-color: #fff;
+  color: black;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Ensure equal height */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 20px;
+}
+
+/* Feature Column */
+.feature-column {
+  background-color: #f0f4f8; 
+  padding: 30px; 
+  border-radius: 10px; 
+  text-align: center;
+  flex: 1; /* Ensures equal width */
+  min-width: 280px; 
+  max-width: 350px;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+/* Hover Effect */
+.feature-column:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /
+
+}
+.features-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.feature-box {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+}
+.feature-icon {
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+.feature-title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* CTA Button */
+.cta-button {
+  font-size: 1rem;
+  padding: 12px 24px;
+  background-color: #4d6a9c; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; 
+  display: inline-block;
+  transition: background 0.3s ease-in-out;
+  margin-top: 40px; 
+}
+
+.cta-button:hover {
+  background-color: #3b4f77; 
+  text-decoration: none;
+}
+
+/* button is below columns */
+.button-container {
+  margin-top: 20px;
+}
+
+
+/* Adjust button placement for mobile screens */
+@media (max-width: 768px) {
+  .button-container {
+    text-align: center;
+    margin-top: auto; /* Adds spacing after the columns */
+  }
+}
