@@ -78,4 +78,7 @@ Team contributions:
   - Navigation(Header) bar and footer section
   - Weather widget (Vue component & AJAX call)
 - [Team Member 2]:
+  - The overall landing page
+    - Hero section, copywriting, the About section, FAQ and CTA
+  - 
 - [Team Member 3]:
