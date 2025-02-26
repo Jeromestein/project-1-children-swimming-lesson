@@ -77,11 +77,11 @@ Team contributions:
   - Basic website theme design
   - Navigation(Header) bar and footer section
   - Weather widget (Vue component & AJAX call)
-- [Team Member 2]:
-  - The overall landing page
+- Shinga Yoshimine:
+  - The overall content in the landing page
     - Hero section, copywriting, the About section, FAQ and CTA
   - Added images into the Program page
-  - The overall schedule page
+  - The overall content in the schedule page
     - Added more content into the table
     - Bootstrap for hover effect.
 - [Team Member 3]:
