@@ -96,11 +96,7 @@ h1:not(.hero-banner h1) {
   }
 }
 
-/* gallery */
-
-#galleryTitle {
-  text-align: center;
-}
+/* gallery carousel*/
 /* Ensure all images have the same height */
 .fixed-img {
   height: 500px; /* Adjust height as needed */
