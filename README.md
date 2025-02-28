@@ -12,6 +12,7 @@ The homepage serves as the main entry point to our swimming school website, feat
 - Consistent footer with contact information and social media links
 
 Key technical features:
+
 - Vue.js components for the hero banner and weather widget
 - Bootstrap 4 for responsive design
 - jQuery for interactive elements
@@ -20,12 +21,14 @@ Key technical features:
 ## Programs Page (programs.html)
 
 Our programs page showcases the different swimming courses we offer:
+
 - Toddler Swimming (Ages 1-3)
 - Preschool Swimming (Ages 3-5)
 - Learn to Swim (Ages 6-12)
 - Advanced Swimming (Ages 8-12)
 
 Each program is presented in a card layout with:
+
 - Representative images
 - Detailed descriptions
 - Bullet points highlighting key activities and skills
@@ -35,6 +38,7 @@ The page maintains consistent navigation and footer sections for seamless user e
 ## Gallery Page (gallery.html)
 
 The gallery page features:
+
 - A responsive carousel showcasing swimming class images
 - Caption text for each image
 - Smooth transitions between images
@@ -45,6 +49,7 @@ This visual showcase helps parents and children see our facilities and classes i
 ## Schedule Page (schedule.html)
 
 The schedule page provides a comprehensive timetable of our swimming classes including:
+
 - A responsive table showing class times for each day of the week
 - Color-coded closed times
 - Notes section with important reminders for participants
@@ -55,6 +60,7 @@ The schedule is designed to be easily scannable on both desktop and mobile devic
 ## Contact Page (contact.html)
 
 Our contact page features:
+
 - A user-friendly form for inquiries
 - Form validation to ensure complete information
 - Dropdown selection for program interest
@@ -64,15 +70,17 @@ Our contact page features:
 ## Technology Stack & Team Contributions
 
 Our website utilizes:
+
 - HTML5 for structure
-- CSS3 for styling 
+- CSS3 for styling
 - JavaScript ES5 for interactivity
 - jQuery for DOM manipulation and AJAX calls
 - Bootstrap 4 for responsive layout
 - Vue.js for component-based architecture
 
 Team contributions:
-- Jiayi Wang: 
+
+- Jiayi Wang:
   - Initial project structure setup
   - Basic website theme design
   - Navigation(Header) bar and footer section
