@@ -52,23 +52,7 @@
 
     <!-- Main Content -->
     <div class="container mt-5">
-      <h1>Swimming Gallery</h1>
-      <!-- <div id="gallery-app">
-        <div class="row" id="photo-gallery">
-          <div class="col-md-4 mb-4">
-            <div class="card card-hover">
-              <img
-                src="../assets/images/gallery/swimming-1.jpg"
-                class="card-img-top"
-                alt="Swimming Class"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Swimming Lessons</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
+      <h1 id="galleryTitle">Swimming Gallery</h1>
 
       <div
         id="galleryCarousel"
@@ -124,8 +108,8 @@
         <!-- Controls -->
         <a
           class="carousel-control-prev"
-          href="#galleryCarousel"
           role="button"
+          data-target="#galleryCarousel"
           data-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -133,8 +117,8 @@
         </a>
         <a
           class="carousel-control-next"
-          href="#galleryCarousel"
           role="button"
+          data-target="#galleryCarousel"
           data-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>

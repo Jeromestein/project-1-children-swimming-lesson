@@ -96,7 +96,11 @@ h1:not(.hero-banner h1) {
   }
 }
 
-/* gallery carousel */
+/* gallery */
+
+#galleryTitle {
+  text-align: center;
+}
 /* Ensure all images have the same height */
 .fixed-img {
   height: 500px; /* Adjust height as needed */
@@ -404,6 +408,41 @@ footer.text-white p {
 /* button is below columns */
 .button-container {
   margin-top: 20px;
+}
+
+#reviewCarousel{
+  margin-top: 20px;
+}
+
+#reviews .card {
+  height: 200px;
+}
+
+#reviews .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: flex !important; /* Make sure they are visible */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    width: 5%; /* Adjust button size */
+    background-color: gray;
+}
+
+/* reviews */
+@media (max-width: 576px) {
+  .carousel .row {
+    display: flex;
+    justify-content: center;
+  }
+  .carousel .col-md-4 {
+    max-width: 100%; /* Ensures only one card is shown on small screens */
+  }
 }
 
 
