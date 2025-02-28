@@ -84,4 +84,8 @@ Team contributions:
   - The overall content in the schedule page
     - Added more content into the table
     - Bootstrap for hover effect.
-- [Team Member 3]:
+- Pengbin Sun:
+  - Added the carousel to the Gallery page
+  - Filled in Program Details
+  - Fixed multiple bugs involving the navbar and image paths
+  - Added student reviews in Programs page
